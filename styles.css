@@ -1,0 +1,246 @@
+
+
+
+
+
+
+
+
+
+html                    {
+        height: 100%;
+        }
+
+
+body                    {
+        color: rgb(192, 177, 177);
+
+        min-height: 100vh;
+
+
+        min-width:1000px;        /* Suppose you want minimum width of 1000px */
+        width: auto !important;  /* Firefox will set width as auto */
+        width:1000px;            /* As IE6 ignores !important it will set width as 1000px; */
+        }
+
+
+
+
+
+/* .break a
+        {
+        flex: 1;
+
+        height: auto;
+        width: auto;
+
+        } */
+
+
+.break                          {
+                                flex: 1;
+                                /* this property allows the flex item to grow in response to the other items in the flex container  */
+                                /* we can then remove any previous fixed dimensions such as the width percentage                    */
+
+                                }
+
+                                .break a:hover  {
+                                                color: #000;
+                                                transition: all 1s ease;
+                                                }
+
+
+
+
+
+
+
+
+
+
+/* Header */
+
+.main_header_div                {
+                                                                display: flex;
+
+                                                                flex-direction: row;
+
+                                                                justify-content: center;
+                                                                align-items: center;
+
+                                                                padding: 10px 0;
+                                                                margin: 10px 72px;
+
+                                                                height: auto;
+
+                                                                position: center;
+
+                                                                border-bottom: 1px silver solid;
+
+
+                                /* display: flex;
+
+                                flex-direction: row;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                padding: 10px 80px;
+                                margin: 10px;
+
+                                height: auto;
+
+                                position: center;
+
+                                border-bottom: 1px silver solid; */
+
+                                list-style-type: none;
+                                }
+
+.main_header_div li             {
+                                justify-content: center;
+                                align-items: center;
+                                }
+
+.main_header_div a            {
+                                color: rgb(192, 177, 177);
+
+                                text-decoration: none;
+
+                                }
+
+.main_header_div h1 , h2 , h3           {
+                                        padding: 10px 0;
+                                        margin: 75px 0;
+
+                                        }
+
+#title                          {
+                                text-align: center;
+                                }
+
+
+
+
+
+
+
+
+
+            /* Footer */
+
+            #page-container
+                            {
+                            position: relative;
+                            min-height: 100vh;
+                            }
+                            /* maintains 100% of the viewport */
+                            /* elements that are relatively positioned can move around while still remaining in the regular document flow */
+
+            #content-wrap   {
+                            justify-content: center;
+                            align-items: center;
+
+                            text-align: center;
+
+                            padding-bottom: 5rem;    /* Footer height */
+                            }
+
+                #footer     {
+                            justify-content: center;
+                            align-items: center;
+
+                            text-align: center;
+
+                            padding-top: 1rem;
+
+                            width: 100%;
+                            height: 5rem;            /* Footer height */
+
+
+
+
+
+
+
+
+
+                            position: absolute;
+                            bottom: 0;
+
+                            background-color: #F5F5F5;
+                            }
+
+                #footer p   {
+                            color: #000000;
+                            }
+
+
+
+
+
+
+
+
+/* Main Navigation */
+
+.main_nav               {
+                        flex: 1;
+
+                        display: flex;
+
+                        flex-direction: row;
+
+                        padding: 10px 80px:
+
+                        margin: 10px;
+
+                        height: auto;
+                        }
+
+/* .main_nav
+                li      {
+                        flex: 1;
+
+                        height: auto;
+                        width: auto;
+                        } */
+
+
+
+
+
+/* Images */
+
+        .banner_img
+                        {
+                        display: grid;
+
+                        grid-template-columns: repeat(4, 1fr);
+
+                        grid-template-areas: "image1 image1 image1 image1"
+                                             "text text text text";
+                        grid-template-rows: auto;
+
+                        /* max-height: 500px: */
+
+                        padding:
+                        120px
+                        72px ;
+                        }
+
+
+        .image1         {
+                        grid-area: image1;
+
+                        object-fit: cover;
+
+                        height: 100%;
+                        width: 100%;
+
+                        opacity: 0.73;
+
+                        /* box-shadow: 0 0 10px 5px #000; */
+
+                        /* border-radius: 0.5px; */
+                        }

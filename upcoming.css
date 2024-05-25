@@ -1,0 +1,303 @@
+
+
+
+
+
+
+
+
+
+html                    {
+    height: 100%;
+    }
+
+
+body                    {
+    color: rgb(192, 177, 177);
+
+    min-height: 100vh;
+
+    min-width:1000px;        /* Suppose you want minimum width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width:1000px;            /* As IE6 ignores !important it will set width as 1000px; */
+    }
+
+
+
+
+
+
+
+
+
+
+/* Header */
+
+.main_header_div            {
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px 0;
+        margin: 10px 72px;
+
+        height: auto;
+
+        position: center;
+
+        border-bottom: 1px silver solid;
+
+
+        /* display: flex;
+
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px 80px;
+        margin: 10px;
+
+        height: auto;
+
+        position: center;
+
+        border-bottom: 1px silver solid; */
+        }
+
+.main_header_div h1 , h2
+        {
+        flex: 1;
+
+        padding: 10px 0;
+        margin: 75px 0;
+
+        width: 50%;
+        }
+
+
+.break a button             {
+        color: black;
+        }
+
+.break a
+        {
+        flex: 1;
+
+        height: auto;
+        width: auto;
+
+        }
+
+.break                      {
+        flex: 1;
+        /* this property allows the flex item to grow in response to the other items in the flex container  */
+        /* we can then remove any previous fixed dimensions such as the width percentage                    */
+
+        }
+
+#title                      {
+        text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+#page-container
+    {
+    position: relative;
+    min-height: 100vh;
+    }
+    /* maintains 100% of the viewport */
+    /* elements that are relatively positioned can move around while still remaining in the regular document flow */
+
+#content-wrap   {
+    justify-content: center;
+    align-items: center;
+
+    text-align: start;
+
+    padding-bottom: 5rem;    /* Footer height */
+    }
+
+#footer     {
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding-top: 1rem;
+
+    width: 100%;
+    height: 5rem;            /* Footer height */
+
+    position: absolute;
+    bottom: 0;
+
+    background-color: #F5F5F5;
+    }
+
+#footer p   {
+    color: #000000;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Banner */
+
+.main_banner    {
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                padding-top: 300px;
+                padding-bottom: 300px;
+                }
+
+    .banner_img {
+                width: 75%;
+                max-height: auto;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                opacity: 0.93;
+                }
+
+
+                /* Content */
+
+                .main_content   {
+                        display: flex;
+
+                        width: 75%;
+                        margin: 0 auto;
+
+                        padding-bottom: 300px;
+                                }
+
+                                .main_content h2 {
+                                                margin: 5px 5px 30px 5px;
+                                                padding: 5px;
+                                                }
+                                                .main_content h3 {
+                                                        margin: 0 0 30px 0;
+
+                                                        }
+
+
+
+
+                .news_list li,
+                .feature_list li        {
+                                        margin: 5px;
+                                        padding: 5px;
+                                        }
+
+                                .column {
+                                        width: 50%;
+                                        height: auto;
+
+                                        margin: 5px;
+                                        padding: 0 5px;
+                                        }
+                                        .news_list li, p        {
+                                                                width: 100%;
+                                                                height: 45px:
+
+                                                                margin: 0;
+
+                                                                line-height: 1.6;
+                                                                }
+
+                .column_title           {
+                                        /* font-size: 1.8em; */
+                                        color: burlywood;
+                                        border-bottom: 1px solid burlywood;
+                                        }
+
+                .article_title          {
+                                        /* font-size: 0.9em; */
+                                        margin: 5px 5px 30px 5px;
+                                        }
+
+
+
+
+
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             /*===============
+                Media Queries
+                ===============*/
+
+                        @media (max-width: 1200px)   {
+
+
+                        .column   {
+
+width: 100%;
+
+
+                                    }
+                                }

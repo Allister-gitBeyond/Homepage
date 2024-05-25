@@ -1,0 +1,348 @@
+
+
+
+
+
+
+
+
+
+html                        {
+    height: 100%;
+    }
+
+
+body                        {
+    color: rgb(192, 177, 177);
+
+    min-height: 100vh
+
+
+        min-width:1000px;        /* Suppose you want minimum width of 1000px */
+        width: auto !important;  /* Firefox will set width as auto */
+        width:1000px;            /* As IE6 ignores !important it will set width as 1000px; */
+
+    }
+
+
+
+
+
+
+
+
+
+
+/* Header */
+
+.main_header_div            {
+                            display: flex;
+
+                            flex-direction: row;
+
+                            justify-content: center;
+                            align-items: center;
+
+                            padding: 10px 0;
+                            margin: 10px 72px;
+
+                            height: auto;
+
+                            position: center;
+
+                            border-bottom: 1px silver solid;
+                            }
+
+.main_header_div h1 , h2
+                            {
+                            flex: 1;
+
+                            padding: 10px 0;
+                            margin: 75px 0;
+
+                            width: 50%;
+                            }
+
+
+.break a button             {
+                            color: black;
+                            }
+
+.break a
+                            {
+                            flex: 1;
+
+                            height: auto;
+                            width: auto;
+                            }
+
+.break                      {
+                            flex: 1;
+                            /* this property allows the flex item to grow in response to the other items in the flex container  */
+                            /* we can then remove any previous fixed dimensions such as the width percentage                    */
+
+                            }
+
+#title                      {
+                            text-align: center;
+                            }
+
+
+
+
+
+
+
+
+
+    /* Footer */
+
+    #page-container
+                    {
+                    position: relative;
+                    min-height: 100vh;
+                    }
+
+      #content-wrap
+                    {
+                    justify-content: center;
+                    align-items: center;
+
+                    /* text-align: center; */
+
+                    padding-bottom: 5rem;    /* Footer height */
+                    }
+
+      #footer       {
+                    justify-content: center;
+                    align-items: center;
+
+                    text-align: center;
+
+                    padding-top: 1rem;
+
+                    width: 100%;
+                    height: 5rem;            /* Footer height */
+
+                    position: absolute;
+                    bottom: 0;
+
+                    background-color: #F5F5F5;
+                    }
+
+      #footer p     {
+                    color: #000000;
+                    }
+
+
+
+
+
+
+
+
+
+    /* Blog Columns */
+
+    .column_wrap    {
+                        width:100%;
+
+                        display: inline-flex;
+                        /* inline flex is great way to organise two columns so that they take up */
+                        /* entire screen space from left to right without dropping down to the next line */
+
+                        flex-wrap: wrap;
+
+                        /* margin-top: 300px; */
+                        /* margin-bottom: 300px; */
+
+                        padding-top: 0;
+
+                        padding-left: 72px;
+                        padding-right: 1172px;
+
+                        min-width: 900px;
+
+                    }
+
+
+
+
+
+    .left_column    {
+                    /* flex: 1; */
+
+                    float: left;
+                    width: 15%;
+
+                    display: grid;
+
+                    grid-template-columns: repeat(1, 1fr);
+
+                    /* grid-template-areas:    "image1 , image1 , image1 , image1"
+                                            "text , text , text , text"; */
+
+                    grid-template-rows: auto;
+
+
+                    text-align: center;
+
+
+                    color: black;
+
+                    border-right: 1px silver solid;
+                    border-left: 1px silver solid;
+
+                    /* background-color: gray; */
+
+                    }
+
+    .item                   {
+                            width: 100%;
+
+                            min-height: 54px;
+
+                            line-height: 1.6;
+
+                            padding: 15px;
+                            margin: 0;
+                            }
+
+
+                    .right_column       {
+                                        /* flex: 1; */
+
+                                        float: right;
+                                        width: 85%;
+
+                                        display: grid;
+
+                                        grid-template-columns: repeat(1, 1fr);
+
+                                        /* grid-template-areas:    "image1 , image1 , image1 , image1"
+                                                                "text , text , text , text"; */
+
+                                        grid-template-rows: auto;
+
+                                        text-align: start;
+
+                                        color: black;
+
+                                        background-color: #DCDCDC;
+
+                                        border-right: 1px silver solid;
+                                        }
+
+                        .post                   {
+                                                width: 50%;
+
+                                                min-height: 54px;
+
+                                                line-height: 1.6;
+
+                                                padding: 15px 35px;
+                                                margin: 0;
+                                                }
+                        /* the usefulness of using two grid columns inside of the inline flex container*/
+                        /* is that the output of the information is mirrored across both columns*/
+                        /* the space of one blog post is equally filled by the linked / similiar column */
+
+
+
+                        .image                  {
+                                                width: 50%;
+
+                                                min-height: 54px;
+
+                                                line-height: 1.6;
+
+                                                padding: 30px 40px;
+                                                margin: 0;
+                                                }
+
+
+
+
+
+
+/* Column Dividers */
+
+.divider    {
+            display: flex;
+
+            width: 100%;
+            min-height: 300px;
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             /*===============
+                Media Queries
+                ===============*/
+
+
+
+
+                @media (max-width: 3000px)   {
+
+
+
+                    .column_wrap  {
+                        padding-left: 72px;
+                        padding-right: 72PX;
+                            }
+
+                                        /* .text
+                                            {
+                                            color: aquamarine;
+                                            } */
+                                /* testing to ensure works */
+                    }
+
+
+
+
+                    @media (max-width: 1200px)   {
+
+
+
+                        /* .column_wrap  {
+                            padding-left: 72px;
+                            padding-right: 72PX;
+                                } */
+
+                                .post , .image   {
+                                                    width: 100%;
+                                }
+
+                                            /* .text
+                                                {
+                                                color: aquamarine;
+                                                } */
+                                    /* testing to ensure works */
+                        }
+
+
+
+
+
+

@@ -1,0 +1,174 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="portfolio.css" rel="stylesheet">
+        <title>Portfolio</title>
+    </head>
+
+
+    <script>
+            document.addEventListener   ("DOMContentLoaded" ,   function (  )       {
+                                                                                        // alert("Document fully loaded");
+
+                                                                                        const txt = document.querySelectorAll('.text');
+
+                                                                                        // let numb = txt.length
+                                                                                        // alert(numb);
+
+                                                                                        for (i of txt)         {
+
+                                                                                                                let j = i ;
+                                                                                                                let next = j.nextElementSibling;
+
+                                                                                                                j.addEventListener( 'click'  ,  function( )
+                                                                                                                                                            {   next.style.opacity = "1"; } ) ;
+                                                                                                                }
+                                                                                        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <body>
+            <div id="page-container">
+                                                            <div id="content-wrap">
+                                                                                                <div class="main_header_div">
+                                                                                                                                        <div class="break">
+                                                                                                                                            <a href="index.html">
+                                                                                                                                                <button type="button" class="btn btn-light , button">Home</button>
+                                                                                                                                            </a>
+                                                                                                                                        </div>
+                                                                                                        <h2 id = 'title'> Portfolio </h2>
+
+                                                                                                                                        <div class="break">
+                                                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div class="banner_img">
+
+                                                                                                    <img class="image1" src="/../images/portfolio_images/zGrayscale.bmp">
+
+                                                                                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                <div class="layout">
+                                                                                                    <div class="text , text2">
+
+                                                                                                                    <p></p>
+                                                                                                                    <p></p>
+                                                                                                                    <h4>Filter</h4>
+                                                                                                                    <p></p>
+                                                                                                                    <p></p>
+
+                                                                                                                    <p>To write a programme that takes an input bmp FILE and outputs a newly applied filter to that image.</p>
+                                                                                                                    <p></p><p></p>
+                                                                                                                    <p>Each RGB TRIPLE struct respresents a signle 24 Byte pixel which is unqiue value of red, green and blue.</p>
+                                                                                                                    <p></p><p></p>
+                                                                                                                    <p>In grayscale each pixel struct is looped through & given an AVERAGE value for the red, green and blue -
+                                                                                                                        <p></p>
+                                                                                                                    <p>when these three are equal then the output is some shade of gray.</p>
+                                                                                                    </div>
+                                                                                                                    <div class="image">
+                                                                                                                        <img src="/../images/portfolio_images/CS50. Project IV (4).jpg" class="image2">
+                                                                                                                    </div>
+                                                                                                </div>
+
+
+                                                                                                <div class="layout , layout2">
+                                                                                                    <div class="text , switch">
+
+                                                                                                        <p></p>
+                                                                                                        <p></p>
+                                                                                                        <p>Malloc is useful for directing the application of memory from either the Heap or the Stack.</p>
+                                                                                                        <p></p>
+                                                                                                        <p>It is a method of allocating dynamically a specific section or chunk of memory for a function to complete its task.</p>
+                                                                                                        <p></p><p></p><p></p>
+                                                                                                        <p>As an example, a typedef string that is used for the word Hello! would need to be allocated enough memory for each letter or char in Hello! plus memory for the null character \0 </p>
+                                                                                                        <p></p><p></p>
+                                                                                                        <p>
+                                                                                                            In circumstances where it is not possible to know the size of the memory that needs to be allocated and is calculated during running time then an array can be initialized.
+                                                                                                        </p>
+                                                                                                    </div>
+
+                                                                                                    <div class="image">
+                                                                                                        <img src="/../images/portfolio_images/CS50 Notation (6).jpg" class="image2">
+                                                                                                    </div>
+                                                                                        </div>
+
+
+                                                                                                <div class="layout">
+                                                                                                    <div class="text">
+
+                                                                                                        <p></p>
+                                                                                                        <p></p>
+                                                                                                        <h4>Substitution</h4>
+                                                                                                        <p></p>
+                                                                                                        <p></p>
+
+                                                                                                        <p>For this programme the developer is expected to implement a key code for each unique character in the English alphabet.</p>
+                                                                                                        <p></p><p></p>
+                                                                                                        <p>At run time the user should input a key code -
+                                                                                                        <p>some combination of the 26 letters in the English alphabet followed by a Plain Text that will be their unique password.</p>
+                                                                                                        <p></p><p></p>
+                                                                                                        <p>The return value is what is replaced for each Plain Text character after the Cypher has substituted.</p>
+                                                                                                    </div>
+
+                                                                                                    <div class="image , layout2">
+                                                                                                        <img src="/../images/portfolio_images/cipher.jpg" class="image2">
+                                                                                                    </div>
+                                                                                        </div>
+                                                            <!-- all other page content -->
+                                                            </div>
+                                                            <footer id="footer">
+                                                                <p>&copy; 2016 Litt and co.</p>
+                                                            </footer>
+                                                            </div>
+        </body>
+    </html>
+
