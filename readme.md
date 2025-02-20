@@ -44,10 +44,10 @@
   <br>
 
   Hompage project from Harvards CS50 programming course implementing CSS - HTML - JavaScript 
-
+ 
   <br>
 
-  <<   Spec 📐   >>
+  <|   Spec 📐   |>
 
   <br>
   
