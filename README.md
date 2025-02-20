@@ -28,7 +28,9 @@
 
   Hompage using CSS - HTML - JavaScript 
 
-  Mobile friendly desgin allows the images and content to reflect the viewport and enahnce user experience
+  Mobile friendly desgin using media queries
+  
+  Images and content reflect the viewport and with the goal to enhance user experience
   
   <br><br><br><br><br><br><br><br><br><br>
 
@@ -38,6 +40,6 @@
 
   <br>
 
-  Great place to output travel photography from trips to some of my favourite places 
+  Platform to view photos of travel and inspiring places around the world
 
   <br><br><br><br><br><br><br><br><br><br>
