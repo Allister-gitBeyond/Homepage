@@ -1,0 +1,284 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html                    {       height: 100%;                       }
+
+
+body                    {       min-height: 100vh;
+                                min-width:1000px;                       /*  Suppose you want minimum width of 1000px                */
+                                width: auto !important;                 /*  Firefox will set width as auto                          */
+                                width:1000px;                           /*  As IE6 ignores !important it will set width as 1000px;  */
+
+                                color: rgb(192, 177, 177);          }
+
+
+
+
+
+/*==========================/
+        HEADER STYLES
+/==========================*/
+
+.main_header_div        {       height: auto;
+
+                                position: center;
+
+                                display: flex;
+
+                                flex-direction: row;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                margin: 0 72px;
+
+                                padding: 75px 0 20px;
+
+                                border-bottom: 1px silver solid;        }
+
+
+#title                  {       text-align: center;
+
+                                margin: 20px;
+
+                                padding: 10px;
+
+                                font-family: sans-serif;
+                                font-size: 36px;                        }
+
+
+/* .main_header_div
+                h1 ,
+                h2      {       flex: 1;
+
+                                padding: 10px 0;
+                                margin: 75px 0;
+
+                                width: 50%;                         } */
+
+
+.break a button         {       font-family: sans-serif;
+                                font-size: 20px;
+
+                                transition: 1s ease;
+
+                                color: black;                   }
+
+
+.break a                {       height: auto;
+                                width: auto;
+
+                                flex: 1;                        }
+
+
+.break                  {       flex: 1;                        }
+
+
+
+
+
+/*==========================/
+        FOOTER STYLES
+/==========================*/
+
+#page-container         {       min-height: 100vh;
+
+                                /*  maintains 100% of viewport -                                                                                */
+                                /*  elements that are relatively positioned can move around while still remaining in the regular document flow  */
+
+                                position: relative;             }
+
+
+#content-wrap           {       justify-content: center;
+                                align-items: center;
+
+                                text-align: start;
+
+                                /*  footer height */
+
+                                padding-bottom: 5rem;           }
+
+
+#footer                 {       height: 5rem;
+                                width: 100%;
+
+                                /*  footer height  */
+
+                                position: absolute;
+
+                                bottom: 0;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                text-align: center;
+
+                                padding-top: 1.5rem;
+
+                                background-color: #F5F5F5;      }
+
+
+#footer p               {       font-family: consolas;
+
+                                color: gray;                    }
+
+
+
+
+
+/*==========================/
+        MAIN CONTENT
+/==========================*/
+
+
+.layout                 {       flex: 1;
+
+                                width: 100%;
+
+                                display: grid;
+
+                                gap: 105px;
+
+                                grid-template-columns: repeat(4, 0.2fr);
+
+                                grid-template-areas:    "image1 , image1 , image1 , image1"
+                                                        "text , text , text , text";
+                                grid-template-rows: auto;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                padding-top: 225px;
+                                padding-bottom: 225px;
+                                padding-left: 95px;
+                                padding-right: 95px;    }
+
+
+
+/*  Titles  */
+
+.text h4                {       min-height: 25px;       }
+
+
+
+/*  Image Content  */
+
+.image2                 {       height: auto;
+                                width: 100%;
+
+                                box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.21);
+
+                                opacity: 0.73;          }
+
+
+.image2:hover           {       transition: all 1s ease;
+
+                                opacity: 1;             }
+
+
+
+/*  Text Content  */
+
+.text                   {       display: flex;
+
+                                flex-direction: column;
+
+                                justify-content: start;
+                                align-items: start;
+
+                                text-align: start;
+
+                                height: 100%;
+                                width: auto;
+
+                                line-height: 2;
+
+                                font-family: sans-serif;
+                                font-size: 18px;
+                                color: slategray;               }
+
+
+.text2                  {       border-top: 1px silver solid;   }
+
+
+
+/*  Dividers  */
+
+.divider                {       height: 30px;                   }
+
+
+
+
+
+
+
+
+
+
+/*==========================/
+        MEDIA QUERIES
+/==========================*/
+
+
+@media
+(max-width: 2500px)     {
+
+        /* .text        {       color: aquamarine;              } */
+                                /*  testing to ensure works  */
+
+        .layout         {       grid-template-columns: repeat(2, 0.35fr);
+                                grid-template-areas:    "image1 , image1"
+                                                        "text , text";
+
+                                padding: 200px;         }}
+
+
+@media
+(max-width: 1500px)     {
+
+        /* .text        {       color: aquamarine;              } */
+                                /*  testing to ensure works  */
+
+        .layout         {       gap: 55px;
+
+                                grid-template-columns: repeat(1, 1fr);
+                                grid-template-areas:    "image1"
+                                                        "text";
+
+                                padding: 200px;         }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

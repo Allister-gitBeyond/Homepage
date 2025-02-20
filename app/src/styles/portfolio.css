@@ -1,0 +1,331 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html                    {       height: 100%;                       }
+
+
+body                    {       min-height: 100vh;
+                                min-width:1000px;                       /*  Suppose you want minimum width of 1000px                */
+                                width: auto !important;                 /*  Firefox will set width as auto                          */
+                                width:1000px;                           /*  As IE6 ignores !important it will set width as 1000px;  */
+
+                                color: rgb(192, 177, 177);          }
+
+
+
+
+
+/*==========================/
+        HEADER STYLES
+/==========================*/
+
+.main_header_div        {       height: auto;
+
+                                position: center;
+
+                                display: flex;
+
+                                flex-direction: row;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                margin: 0 72px;
+
+                                padding: 75px 0 20px;
+
+                                border-bottom: 1px silver solid;    }
+
+
+#title                  {       text-align: center;
+
+                                margin: 20px;
+
+                                padding: 10px;
+
+                                font-family: sans-serif;
+                                font-size: 36px;                    }
+
+
+/* .main_header_div
+                h1 ,
+                h2      {       flex: 1;
+
+                                padding: 10px 0;
+                                margin: 75px 0;
+
+                                width: 50%;                         } */
+
+
+.break a button         {       font-family: sans-serif;
+                                font-size: 20px;
+
+                                transition: 1s ease;
+
+                                color: black;                       }
+
+
+.break a                {       height: auto;
+                                width: auto;
+
+                                /*  this property allows the flex item to grow in response to the other items in the flex container  */
+                                /*  we can then remove any previous fixed dimensions such as the width percentage                    */
+
+                                flex: 1;                            }
+
+
+.break                  {       flex: 1;                            }
+
+
+
+
+
+/*==========================/
+        FOOTER STYLES
+/==========================*/
+
+#page-container         {       min-height: 100vh;
+
+                                /*  maintains 100% of viewport -                                                                                */
+                                /*  elements that are relatively positioned can move around while still remaining in the regular document flow  */
+
+                                position: relative;             }
+
+
+#content-wrap           {       justify-content: center;
+                                align-items: center;
+
+                                text-align: start;
+
+                                /*  footer height */
+
+                                padding-bottom: 5rem;           }
+
+
+#footer                 {       width: 100%;
+                                height: 5rem;
+
+                                /*  footer height  */
+
+                                position: absolute;
+
+                                bottom: 0;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                text-align: center;
+
+                                padding-top: 1.5rem;
+
+                                background-color: #F5F5F5;      }
+
+
+#footer p               {       font-family: consolas;
+
+                                color: gray;                    }
+
+
+
+
+
+/*==========================/
+        MAIN CONTENT
+/==========================*/
+
+.banner_img             {       display: flex;
+
+                                /* min-height: 20%; */
+
+                                justify-content: center;
+                                align-items: center;
+
+                                width: 100%;
+                                height: auto;
+
+                                padding-top: 225px;
+                                padding-bottom: 225px;          }
+
+
+.image1                 {       width: 35%;
+                                height: auto;
+
+                                flex 1;                         }
+
+
+
+/*  Sections  */
+
+.layout                 {       flex: 1;
+
+                                width: 100%;
+
+                                display: grid;
+
+                                grid-template-columns: 15% 15%;
+                                /* grid-auto-rows: 200px; */
+
+                                justify-content: center;
+                                align-items: center;
+
+                                gap: 5%;
+
+                                padding-bottom: 150px;          }
+
+
+.layout2                {       padding-bottom: 150px;          }
+
+
+
+/*  Text  */
+
+.text                   {       height: 100%;
+                                width: 100%;
+
+                                display: flex;
+
+                                flex-direction: column;
+
+                                text-align: start;
+
+                                line-height: 2;
+
+                                font-family: sans-serif;
+                                font-size: 18px;
+                                color: slategray;               }
+
+
+.text2                  {       border-top: 1px silver solid;   }
+
+
+
+/*  Images  */
+
+.image                  {       height: 100%;
+                                width: 100%;
+
+                                display: flex;
+
+                                flex-direction: column;
+
+                                justify-content: start;
+                                align-items: center;
+
+                                transition: 1s ease;
+
+                                /*  organising the outer shell of an image blog posts  */
+                                /*  creates the grid line which stays consistent       */
+
+                                opacity: 0;                     }
+
+
+.image2                 {       height: auto;
+                                width: 70%;
+
+                                line-height: 2;
+
+                                opacity: 0.83;                  }
+
+
+.image3                 {       height: auto;
+                                width: 60%;
+
+                                line-height: 2;
+
+                                opacity: 0.83;                  }
+
+
+
+/*  SVG  */
+
+.heap-stack             {       height: 100%;
+                                width: 100%;
+
+                                display: flex;
+
+                                flex-direction: column;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                transition: 1s ease;
+
+                                /*  organising the outer shell of an image blog posts  */
+                                /*  creates the grid line which stays consistent       */
+
+                                opacity: 0;                     }
+
+                                /*  references the contents of the first image inside the grid shell  */
+                                /*  can be thought of as the Placeholder                              */
+
+
+
+.switch                 {       order: 2;                       }
+
+
+
+/*  Dividers  */
+
+.divider                {       height: 30px;
+                                width: 100%;                    }
+
+
+
+
+
+
+
+
+
+
+/*==========================/
+        MEDIA QUERIES
+/==========================*/
+
+@media
+(max-width: 2500px)     {
+        
+            .layout     {       gap: 5%;
+
+                                grid-template-columns: 35% 35%;
+
+                                padding-bottom: 250px;          }
+
+            .image1     {       width: 65%;                     }}
+
+
+@media
+(max-width: 1200px)     {
+
+            .layout     {       gap: 5%;
+
+                                grid-template-columns: 35% 35%;
+
+                                padding-bottom: 200px;          }
+
+            .image1     {       width: 75%;                     }}
+
+
+
+
+
+
+
+
+

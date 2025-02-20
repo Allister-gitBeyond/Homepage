@@ -1,0 +1,318 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html                    {       height: 100%;                       }
+
+
+body                    {       min-height: 100vh;
+                                min-width:1000px;                       /*  Suppose you want minimum width of 1000px                */
+                                width: auto !important;                 /*  Firefox will set width as auto                          */
+                                width:1000px;                           /*  As IE6 ignores !important it will set width as 1000px;  */
+
+                                color: rgb(192, 177, 177);          }
+
+
+
+
+
+/*==========================/
+        HEADER STYLES
+/==========================*/
+
+.main_header_div        {       height: auto;
+
+                                position: center;
+
+                                display: flex;
+
+                                flex-direction: row;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                margin: 0 72px;
+
+                                padding: 75px 0 20px;
+
+                                border-bottom: 1px silver solid;    }
+
+
+#title                  {       text-align: center;
+
+                                margin: 20px;
+
+                                padding: 10px;
+
+                                font-family: sans-serif;
+                                font-size: 36px;                    }
+
+
+/* .main_header_div
+                h1 ,
+                h2      {       flex: 1;
+
+                                padding: 10px 0;
+                                margin: 75px 0;
+
+                                width: 50%;                         } */
+
+
+.break a button         {       font-family: sans-serif;
+                                font-size: 20px;
+
+                                transition: 1s ease;
+
+                                color: black;                       }
+
+
+.break a                {       height: auto;
+                                width: auto;
+
+                                flex: 1;                            }
+
+
+.break                  {       flex: 1;                            }
+
+
+
+
+
+/*==========================/
+        FOOTER STYLES
+/==========================*/
+
+#page-container         {       min-height: 100vh;
+
+                                /*  maintains 100% of viewport -                                                                                */
+                                /*  elements that are relatively positioned can move around while still remaining in the regular document flow  */
+
+                                position: relative;             }
+
+
+#content-wrap           {       justify-content: center;
+                                align-items: center;
+
+                                text-align: start;
+
+                                /*  footer height */
+
+                                padding-bottom: 5rem;           }
+
+
+#footer                 {       width: 100%;
+                                height: 5rem;
+
+                                /*  footer height  */
+
+                                position: absolute;
+
+                                bottom: 0;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                text-align: center;
+
+                                padding-top: 1.5rem;
+
+                                background-color: #F5F5F5;      }
+
+
+#footer p               {       font-family: consolas;
+
+                                color: gray;                    }
+
+
+
+
+
+/*==========================/
+        MAIN CONTENT
+/==========================*/
+
+
+/* Banner */
+
+.main_banner            {       width: 40%;
+
+                                display: flex;
+
+                                /* display: inline-block; */
+
+                                justify-content:center;
+                                align-items: center;
+
+                                margin-left: 30%;
+                                margin-right:30%;
+                                margin-top: 225px;
+                                margin-bottom: 225px;
+
+                                border: 1px solid black;
+
+                                overflow: hidden;               }
+
+
+/* .banner_wrap         {       display: inline-block;
+
+                                align-items: center.
+
+                                margin: 20px;
+
+                                border: 1px solid black;
+
+                                overflow: hidden; } */
+
+
+.banner_img             {       width: 100%;
+
+                                /* max-height: 35%; */
+
+                                display: block;
+
+                                /* align-items: center;
+
+                                padding-left: 20px;
+                                padding-right: 20px; */
+
+                                transition: transform .4s;
+
+                                /*  smoother zoom  */
+
+                                opacity: 0.83;                  }
+
+
+.banner_img:hover       {       transform: scale(1.1);
+
+                                transform-origin: 50% 50%;      }
+
+
+
+/*  Arctle  */
+
+.main_content           {       width: 40%;
+
+                                display: flex;
+
+                                margin: 0 auto;
+
+                                padding-bottom: 300px;
+
+                                line-height: 2;
+
+                                font-family: sans-serif;
+                                font-size: 18px;
+                                color: slategray;               }
+
+
+
+.column                 {       width: 50%;
+                                height: auto;                   }
+
+
+
+/*  Unorder - Ordered List Article Text  */
+
+ul                      {       margin: 0;
+                                padding: 0;
+
+                                list-style: none;               }
+
+
+.news_list
+                li,
+.feature_list
+                li      {       margin: 5px 0;
+
+                                padding: 5px 0;                   }
+
+
+.news_list li, p        {       width: 100%;
+
+                                display: flex;
+
+                                flex-direction: column;         }
+
+
+
+/*  Ttiles  */
+
+.column_title           {       margin: 5px 0 30px;
+
+                                padding: 5px 0;
+
+                                /* font-size: 1.8em; */
+
+                                border-bottom: 1px solid slategray;
+
+                                color: slategray;               }
+
+
+.article_title          {       margin: 0 0 30px;
+
+                                /* font-size: 0.9em; */         }
+
+
+
+/*  Dividers  */
+
+.divider                {       height: 30px;                   }
+
+
+
+
+
+
+
+
+
+
+/*==========================/
+        MEDIA QUERIES
+/==========================*/
+
+
+@media
+(max-width: 2500px)     {
+
+        .main_content   {       width: 70%;
+
+                                flex-direction: row;            }
+
+
+
+        .main_banner    {       width: 70%;
+
+                                margin-left: 15%;
+                                margin-right: 15%;              }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

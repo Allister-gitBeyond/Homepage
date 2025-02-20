@@ -1,0 +1,330 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html                    {       height: 100%;                       }
+
+
+body                    {       min-height: 100vh;
+                                min-width:1000px;                       /*  Suppose you want minimum width of 1000px                */
+                                width: auto !important;                 /*  Firefox will set width as auto                          */
+                                width:1000px;                           /*  As IE6 ignores !important it will set width as 1000px;  */
+
+                                color: rgb(192, 177, 177);          }
+
+
+
+
+
+/*==========================/
+        HEADER STYLES
+/==========================*/
+
+.main_header_div        {       height: auto;
+
+                                position: center;
+
+                                display: flex;
+
+                                flex-direction: row;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                margin: 0 72px;
+
+                                padding: 75px 0 20px;
+
+                                border-bottom: 1px silver solid;    }
+
+
+#title                  {       text-align: center;
+
+                                margin: 20px;
+
+                                padding: 10px;
+
+                                font-family: sans-serif;
+                                font-size: 36px;                    }
+
+
+/* .main_header_div
+                h1 ,
+                h2      {       flex: 1;
+
+                                padding: 10px 0;
+                                margin: 75px 0;
+
+                                width: 50%;         } */
+
+
+.break a button         {       font-family: sans-serif;
+                                font-size: 20px;
+
+                                transition: 1s ease;
+
+                                color: black;                       }
+
+
+.break a                {       height: auto;
+                                width: auto;
+
+                                flex: 1;                            }
+
+
+.break                  {       flex: 1;                            }
+
+
+
+
+
+/*==========================/
+        FOOTER STYLES
+/==========================*/
+
+#page-container         {       min-height: 100vh;
+
+                                /*  maintains 100% of viewport -                                                                                */
+                                /*  elements that are relatively positioned can move around while still remaining in the regular document flow  */
+
+                                position: relative;             }
+
+
+#content-wrap           {       justify-content: center;
+                                align-items: center;
+
+                                text-align: start;
+
+                                /*  footer height */
+
+                                padding-bottom: 5rem;           }
+
+
+#footer                 {       height: 5rem;
+                                width: 100%;
+
+                                /*  footer height  */
+
+                                position: absolute;
+
+                                bottom: 0;
+
+                                justify-content: center;
+                                align-items: center;
+
+                                text-align: center;
+
+                                padding-top: 1.5rem;
+
+                                background-color: #F5F5F5;      }
+
+
+#footer p               {       font-family: consolas;
+
+                                color: gray;                    }
+
+
+
+
+
+/*==========================/
+        MAIN CONTENT
+/==========================*/
+
+.column_wrap        {       width:100%;
+                            min-width: 900px;
+
+                            display: inline-flex;
+
+                            /*  inline flex is great way to organise two columns so that they take up          */
+                            /*  entire screen space from left to right without dropping down to the next line  */
+
+                            flex-wrap: wrap;
+
+                            /*  margin-top: 300px;     */
+                            /*  margin-bottom: 300px;  */
+
+                            padding-top: 0;
+                            padding-left: 72px;
+                            padding-right: 1272px;              }
+
+
+
+/*  Blog Columns  */
+
+.left_column        {       /* flex: 1; */
+
+                            float: left;
+
+                            width: 15%;
+
+                            display: grid;
+
+                            grid-template-columns: repeat(1, 1fr);
+
+                            /* grid-template-areas:    "image1 , image1 , image1 , image1"
+                                                    "text , text , text , text"; */
+
+                            grid-template-rows: auto;
+
+                            text-align: center;
+
+                            color: black;
+
+                            border-right: 1px silver solid;
+                            border-left: 1px silver solid;      }
+
+
+.right_column       {       width: 85%;
+
+                            float: right;
+
+                            display: grid;
+
+                            grid-template-columns: repeat(1, 1fr);
+
+                            /* grid-template-areas:     "image1 , image1 , image1 , image1"
+                                                        "text , text , text , text";        */
+
+                            grid-template-rows: auto;
+
+                            text-align: start;
+
+                            padding-bottom: 250px;
+
+                            /* border-right: 1px silver solid; */
+
+                            /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+
+                            color: black;           }
+
+
+
+/*  Blog Timestamp  */
+
+.item               {       min-height: 54px;
+
+                            width: 100%;
+
+                            margin: 0;
+
+                            padding: 25px;
+
+                            line-height: 2;
+
+                            font-family: sans-serif;
+                            font-size: 18px;
+
+                            color: slategray;       }
+
+
+/*  Blog Text  */
+
+.post               {       min-height: 54px;
+
+                            width: 50%;
+
+                            margin: 0;
+
+                            padding: 25px 50px;
+
+                            line-height: 2;
+
+                            font-family: sans-serif;
+                            font-size: 20px;
+
+                            /*  the usefulness of using two grid columns inside of the inline flex container  */
+                            /*  is that the output of the information is mirrored across both columns         */
+                            /*  the space of one blog post is equally filled by the linked / similiar column  */
+
+                            color: slategray;       }
+
+/*  Blog Image  */
+
+.image              {       min-height: 54px;
+
+                            width: 50%;
+
+                            margin: 0;
+
+                            padding: 65px 50px;
+
+                            border-radius: 50px;
+
+                            line-height: 1.6;
+
+                            opacity: 0.83;          }
+
+
+
+/*  Dividers  */
+
+.divider                {   height: 225px;
+                            width: 100%;
+
+                            display: flex;          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================/
+        MEDIA QUERIES
+/==========================*/
+
+@media
+(max-width: 3000px)     {
+
+        /* .text        {       color: aquamarine;              } */
+                                /*  testing to ensure works  */
+
+        .column_wrap    {   padding-left: 72px;
+                            padding-right: 72PX;    }}
+
+
+@media
+(max-width: 1500px)     {
+
+        /* .text        {       color: aquamarine;              } */
+                                /*  testing to ensure works  */
+
+        .post ,
+        .image          {   width: 100%;            }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
