@@ -47,7 +47,7 @@
  
   <br>
 
-  < \ \   Spec 📐   \ \ >
+  < \ \&nbsp;&nbsp;   Spec 📐   &nbsp;&nbsp;\ \ >
 
   <br>
   
