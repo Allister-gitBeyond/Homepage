@@ -47,7 +47,7 @@
  
   <br><br>
 
-   | > > &nbsp; &nbsp;   Spec 📐   &nbsp; &nbsp; < < |
+   //>> &nbsp; &nbsp;   Spec 📐   &nbsp; &nbsp; <<//
 
   <br><br>
   
@@ -70,7 +70,6 @@
 
   <br><br>
 
-    <br>
     [1]   Contain at least four different .html pages at least one of which is index.html (the main page of your website)
 
           It should be possible to get from any page on your website to any other page by following one or more hyperlinks
@@ -87,12 +86,15 @@
 
 
     [4]   Ensure that your site looks nice on browsers both on mobile devices as well as laptops and desktops
-    <br>
 
-  <br><br>
+  <br><br><br><br><br>
 
   Recall also that by opening Developer Tools in Google Chrome, you can simulate visiting your page on a mobile device by clicking the phone -
-  shaped icon to the left of Elements in the developer tools window, or, once the Developer Tools tab has already been opened, by typing Ctrl+Shift+M on a PC or Cmd+Shift+M on a Mac, rather than needing to visit your site on a mobile device separately!
+  shaped icon to the left of Elements in the developer tools window
+
+  <br>
+
+  Or, once the Developer Tools tab has already been opened, by typing Ctrl+Shift+M on a PC or Cmd+Shift+M on a Mac, rather than needing to visit your site on a mobile device separately!
 
   <br><br><br><br><br><br><br><br><br><br>
 
