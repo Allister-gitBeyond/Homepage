@@ -90,13 +90,11 @@
   <br><br><br><br><br>
 
   Recall also that by opening Developer Tools in Google Chrome, you can simulate visiting your page on a mobile device by clicking the phone -
-
   shaped icon to the left of Elements in the developer tools window
 
   <br><br>
 
   Or, once the Developer Tools tab has already been opened, by typing Ctrl+Shift+M on a PC or Cmd+Shift+M on a Mac, 
-
   rather than needing to visit your site on a mobile device separately!
 
   <br><br><br><br><br><br><br><br><br><br>
