@@ -47,13 +47,13 @@
  
   <br><br>
 
-   //>> &nbsp; &nbsp;   Spec 📐   &nbsp; &nbsp; <<//
+   //>> &nbsp; &nbsp;   Spec &nbsp; 📐   &nbsp; &nbsp; <<//
 
   <br><br>
   
-  Images and content reflect the viewport with the goal to enhance user experience
+  Images and content reflect the viewport with the goal to enhance user experience.
 
-  Mobile friendly desgin using media queries 
+  Mobile friendly desgin using media queries.
 
   
   <br><br><br><br><br><br><br><br><br><br>
